@@ -22,4 +22,5 @@ urlpatterns = [
     path('past_capsules', views.past_capsules),
     path('upcoming_capsules', views.upcoming_capsules),
     path('all_capsules', views.all_capsules),
+    path('past_capsule', views.past_capsule),
 ]
