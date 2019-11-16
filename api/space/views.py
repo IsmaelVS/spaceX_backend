@@ -24,3 +24,11 @@ def past_capsule(request):
     serial = past_capsules[-1]['capsule_serial']
     past_capsule = get('https://api.spacexdata.com/v3/capsules/{}'.format(serial))
     return HttpResponse(past_capsule)
+
+
+def upcoming_capsule(request):
+    r = get('https://api.spacexdata.com/v3/capsules/upcoming')
+    past_capsules = r.json()
+    serial = past_capsules[0]['capsule_serial']
+    past_capsule = get('https://api.spacexdata.com/v3/capsules/{}'.format(serial))
+    return HttpResponse(past_capsule)
