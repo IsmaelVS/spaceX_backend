@@ -11,3 +11,8 @@ def past_capsules(request):
 def upcoming_capsules(request):
     r = get('https://api.spacexdata.com/v3/capsules/upcoming')
     return HttpResponse(r.json())
+
+
+def all_capsules(request):
+    r = get('https://api.spacexdata.com/v3/capsules')
+    return HttpResponse(r.json())
