@@ -5,17 +5,17 @@ from django.http import HttpResponse
 
 def past_capsules(request):
     r = get('https://api.spacexdata.com/v3/capsules/past')
-    return HttpResponse(r.json())
+    return HttpResponse(r)
 
 
 def upcoming_capsules(request):
     r = get('https://api.spacexdata.com/v3/capsules/upcoming')
-    return HttpResponse(r.json())
+    return HttpResponse(r)
 
 
 def all_capsules(request):
     r = get('https://api.spacexdata.com/v3/capsules')
-    return HttpResponse(r.json())
+    return HttpResponse(r)
 
 
 def past_capsule(request):
