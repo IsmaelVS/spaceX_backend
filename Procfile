@@ -1,2 +1,2 @@
-bash cd api
+bash -c "cd api"
 web: gunicorn api.wsgi
