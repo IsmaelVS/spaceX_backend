@@ -6,7 +6,7 @@ API do spaceX em django, tem o objetivo de exibir informações de lançamentos 
 
 É necessário clonar o projeto seguindo o comando a baixo:
 ```bash
-$ git clone 
+$ git clone https://github.com/IsmaelVS/spaceX_backend.git
 ```
 
 Após o clone, é necessário instalar os `requirements.txt`.
