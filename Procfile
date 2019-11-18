@@ -1,1 +1,2 @@
-web: bash ./start.sh
+bash cd api
+web: gunicorn api.wsgi
