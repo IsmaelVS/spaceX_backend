@@ -1,2 +1,1 @@
-bash -c "cd api"
-web: gunicorn api.wsgi
+web: gunicorn --chdir api api.wsgi
